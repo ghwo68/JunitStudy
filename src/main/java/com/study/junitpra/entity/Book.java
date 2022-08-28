@@ -1,11 +1,9 @@
 package com.study.junitpra.entity;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
 
 @NoArgsConstructor
 @Getter
@@ -21,10 +19,10 @@ public class Book {
     @Column(length = 20, nullable = false)
     private String author;
 
-    @Builder
-    public Book(Long id, String title, String author) {
-        this.id = id;
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
     }
+
+
 }
