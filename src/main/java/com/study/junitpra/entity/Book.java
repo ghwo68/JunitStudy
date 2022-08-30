@@ -1,5 +1,6 @@
 package com.study.junitpra.entity;
 
+import com.study.junitpra.controller.dto.BookReqDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -26,6 +27,11 @@ public class Book {
 
     public Book(Long id, String title, String author) {
         this.id = id;
+        this.title = title;
+        this.author = author;
+    }
+
+    public void update(String title, String author){
         this.title = title;
         this.author = author;
     }
